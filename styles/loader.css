@@ -1,0 +1,36 @@
+/* ! Second subtask */
+.loader-btn.loading {
+    transform: scale(1.1);
+
+    /* Add shadow */
+    box-shadow: 0 0 10px 0 var(--accent-orange-color);
+
+    color: transparent;
+    background: var(--secondary-color);
+}
+
+.loader-btn.loading::after {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+
+    width: 1.5em;
+    height: 1.5em;
+
+    content: " ";
+    
+    border: 0.2em solid var(--accent-gray-color);
+    border-radius: 1em;
+    border-top-color: var(--accent-orange-color);
+
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

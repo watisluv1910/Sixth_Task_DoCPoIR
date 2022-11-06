@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="/styles/main_styles/reset.css">
+        <link rel="stylesheet" href="/styles/main_styles/style.css">
+        <link rel="stylesheet" href="/styles/main_styles/palette.css">
+        <link rel="stylesheet" href="/styles/main_styles/header.css">
+        <link rel="stylesheet" href="/styles/main_styles/scrollbar.css">
+        <link rel="stylesheet" href="/styles/main_styles/font.css">
+        <link rel="stylesheet" href="/styles/main_styles/system_button.css">
+        
+        <link rel="stylesheet" href="/styles/loader.css">
+        <link rel="stylesheet" href="/styles/fancy_buttons.css">
+        <link rel="stylesheet" href="/styles/notification_button.css">
+        <link rel="stylesheet" href="/styles/cards.css">
+
+        <title>Practical work num.6</title>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Logo</a>
+            <div class="nav-group">
+                <ul class="nav-item navigation" role="list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#loader">Loader</a></li>
+                    <li><a href="#buttons">Buttons</a></li>
+                    <li><a href="#cards">Cards</a></li>
+                    <li><a href="#video">Video</a></li>
+                </ul>
+                <div class="nav-item search">
+                    <span class="icon">
+                        <ion-icon name="search-outline" class="btn search-btn"></ion-icon>
+                        <ion-icon name="close-outline" class="btn close-btn"></ion-icon>
+                    </span>
+                </div>
+                <ion-icon name="menu-outline" class="menu-toggle"></ion-icon>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search here . . .">
+            </div>
+        </header>
+        <main>
+            <section class="box loader-box" id="loader">
+                <button class="btn-system loader-btn">
+                    Click and wait
+                    <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                </button>
+            </section>
+            <section class="box buttons-box" id="buttons">
+                <div class="btn-git">
+                    <div class="tooltip">Github</div>
+                    <div class="icon">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </div>
+                </div>                
+                <div class="btn-hover">Hover</div>
+                <button class="btn-slide">
+                    <div class="btn-slide__text">Slide</div>
+                    <div class="btn-slide__icon">
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </div>       
+                </button>
+                <div class="btn-flip">
+                    <div class="btn-flip__text"></div>
+                </div>
+            </section>
+            <section class="box cards-box" id="cards">
+                <div class="card shop-card">
+                    <div class="card__content">
+                        <div class="card__img">
+                            <img src="/resources/icons/guitar.png" alt="Guitar">
+                        </div>
+                        <h3 class="card__title">Guitar</h3>
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                        <button class="btn-system card__btn">Read more</button>
+                    </div>
+                </div>
+                <div class="card shop-card">     
+                    <div class="card__content">
+                        <div class="card__img">
+                            <img src="/resources/icons/motorcycle.png" alt="Motorcycle">
+                        </div>
+                        <h3 class="card__title">Motorcycle</h3>
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                        <button class="btn-system card__btn">Read more</button>
+                    </div>
+                </div>
+                <div class="card shop-card">
+                    <div class="card__content">
+                        <div class="card__img">
+                            <img src="/resources/icons/laptop.png" alt="Laptop">
+                        </div>
+                        <h3 class="card__title">Laptop</h3>
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                        <button class="btn-system card__btn">Read more</button>
+                    </div>
+                </div>
+            </section>
+            <section class="box cards-box">
+                <div class="card politics-card">
+                    <div class="card__img">
+                        <img src="/resources/images/russia-1.jpg" alt="Guitar">
+                    </div>
+                    <div class="card__content">
+                        <h2 class="card__title">Guitar</h2>
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                        <button class="btn-system card__btn">Read more</button>
+                    </div>
+                </div>
+                <div class="card politics-card">
+                    <div class="card__img">
+                        <img src="/resources/images/russia-2.jpg" alt="Guitar">
+                    </div>
+                    <div class="card__content">
+                        <h2 class="card__title">Guitar</h2>
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                        <button class="btn-system card__btn">Read more</button>
+                    </div>
+                </div>
+                <div class="card politics-card">
+                    <div class="card__img">
+                        <img src="/resources/images/russia-3.png" alt="Guitar">
+                    </div>
+                    <div class="card__content">
+                        <h2 class="card__title">Guitar</h2>
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                        <button class="btn-system card__btn">Read more</button>
+                    </div>
+                </div>
+            </section>
+            <section class="box cards-box">
+                <div class="card travel-card">
+                    <div class="card__img">
+                        <img src="/resources/images/grand_canyon.jpg" alt="Guitar">
+                    </div>
+                    <div class="card__content">
+                        <h2 class="card__title">Guitar</h2>
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                        <button class="btn-system card__btn">Read more</button>
+                    </div>
+                </div>
+                <div class="card travel-card">
+                    <div class="card__img">
+                        <img src="/resources/images/everest.jpg" alt="Guitar">
+                    </div>
+                    <div class="card__content">
+                        <h2 class="card__title">Guitar</h2>
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                        <button class="btn-system card__btn">Read more</button>
+                    </div>
+                </div>
+                <div class="card travel-card">
+                    <div class="card__img">
+                        <img src="/resources/images/kamchatka.jpg" alt="Guitar">
+                    </div>
+                    <div class="card__content">
+                        <h2 class="card__title">Guitar</h2>
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                        <button class="btn-system card__btn">Read more</button>
+                    </div>
+                </div>
+            </section>
+            <section class="box cards-box" id="video">
+                <div class="card food-card">
+                    <div class="card__video">
+                        <video src="/resources/video/cooking.mp4" id="cooking-video" width="400">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="card__content">
+                        <h2 class="card__title">Delicious</h2>
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                        <button class="btn-system card__btn btn-play">
+                            <p>Play</p>
+                            <ion-icon name="play-outline"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <button class="btn-system btn-notify">
+                <div class="btn-notify__content">
+                    <ion-icon class="btn-notify__icon" name="notifications-outline"></ion-icon>
+                    <span class="btn-notify__badge">3</span>
+                    <ul class="btn-notify__list" role="list">
+                        <li><a href="#">Notification 1</a></li>
+                        <li><a href="#">Notification 2</a></li>
+                        <li><a href="#">Notification 3</a></li>
+                        <li><a href="#">Notification 4</a></li>
+                        <li><a href="#">Notification 5</a></li>
+                    </ul>
+                </div>          
+            </button> 
+        </main>
+
+        <!-- For ion-icons correct work -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <!-- Scripts -->
+        <script src="/scripts/headerSearch.js"></script>
+        <script src="/scripts/loader.js"></script>
+        <script src="/scripts/notificationShow.js"></script>
+        <script src="/scripts/videoPlayer.js"></script>
+    </body>
+</html>

@@ -1,0 +1,287 @@
+/* * Git button: */
+.buttons-box .btn-git {
+    position: relative;
+
+    width: 50px;
+    height: 50px;
+    
+    padding: 15px;
+    margin: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    cursor: pointer;
+
+    border-radius: 50%;
+
+    font-size: 25px;
+
+    background: var(--accent-orange-color);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.btn-git .tooltip {
+    position: absolute;
+    top: 0;
+
+    padding: 5px 8px;
+    border-radius: 5px;
+
+    font-size: 14px;
+
+    opacity: 0;
+    pointer-events: none;
+
+    background: var(--secondary-color);
+    color: var(--secondary-color);
+
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.btn-git .icon {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-git .tooltip::before {
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+
+    content: "";
+
+    height: 8px;
+    width: 8px;
+
+    background: var(--accent-gray-color);
+
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.btn-git:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.btn-git:hover div,
+.btn-git:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.btn-git:hover,
+.btn-git:hover .tooltip,
+.btn-git:hover .tooltip::before {
+    background: var(--accent-gray-color);
+    color: var(--secondary-color);
+}
+
+/* * "Hover" button: */
+.btn-hover {
+    position: relative;
+    padding: 20px 40px;
+
+    text-decoration: none;    
+
+    border: 3px solid var(--accent-orange-color);
+
+    color: transparent;
+
+    transition: all 0.5s;
+}
+
+.btn-hover::before {
+
+    content: "Hover";
+
+    position: absolute;
+    top: 50%;
+    left: 100%;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--accent-orange-color);
+    background: var(--accent-gray-color);
+    
+    transform: scale(0) rotatey(0);
+    transition: all 1s;
+
+    opacity: 0;
+}
+
+.btn-hover:hover::before {
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%) rotatey(360deg) scale(1)  ;
+ 
+    opacity: 1;
+}
+
+.btn-hover::after {
+    
+    content: "Hover";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--accent-orange-color);
+    background: var(--accent-gray-color);
+    
+    transform: translate(-50%, -50%) scale(1) rotatey(0);
+    transition: all 1s;
+
+    opacity:1;
+}
+
+.btn-hover:hover::after {
+    transform: scale(0) rotatey(360deg);
+    left: -100%;
+    opacity: 0;
+}
+
+/* * "Slide" button: */
+.btn-slide {
+    position: relative;
+    
+    padding: 13px 30px 13px;
+
+    cursor: pointer;
+
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+
+    outline: 0;
+    
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.btn-slide__icon {
+    position: absolute;
+    right: 10px;
+    top: 21px;
+
+    font-size: 13px;
+
+    opacity: 0;
+
+    transition: 0.2s ease-in-out;
+}
+
+.btn-slide:hover .btn-slide__icon {
+    opacity: 1;
+    transform: translateX(-6px);
+}
+
+.btn-slide__text {
+    transition: 0.8s ease-in-out;
+}
+
+.btn-slide:hover .btn-slide__text {
+    transform: translateX(-6px);
+}
+
+.btn-slide::after {
+    content: "";
+
+    position: absolute;
+    top: 7px;
+    left: 7px;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+
+    background-color: #66f2d5;
+
+    transition: 0.2s ease-in-out;
+}
+
+.btn-slide:hover::after {
+    top: 0;
+    left: 0;
+}
+
+/* * Flip button: */
+.btn-flip {
+    position: relative;
+
+    width: 180px;
+    height: 55px;
+
+    margin: 0 15px;
+
+    display: inline-flex;
+
+    perspective: 1000px;
+}
+
+.btn-flip__text {
+    font-size: 19px;
+    letter-spacing: 1px;
+
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+
+    transition: transform 0.25s;
+}
+
+.btn-flip__text::before,
+.btn-flip__text::after {
+    content: "FLIP";
+
+    position: absolute;
+
+    width: 180px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 5px solid var(--accent-orange-color);
+    border-radius: 5px;
+}
+
+.btn-flip__text::before {
+    background: var(--accent-orange-color);
+    color: var(--secondary-color);
+
+    transform: rotateY(0deg) translateZ(25px);
+}
+
+.btn-flip__text::after {
+    background: var(--accent-gray-color);
+    color: var(--accent-orange-color);
+
+    transform: rotateX(90deg) translateZ(25px);
+}
+
+.btn-flip__text:hover {
+    transform: translateZ(-25px) rotateX(-90deg);
+}
